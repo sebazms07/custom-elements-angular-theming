@@ -17,11 +17,11 @@ platformBrowserDynamic()
   const buttonCustomElement = createCustomElement(CustomButtonComponent, {
     injector: app.injector,
   });
-  customElements.define('custom-a-btn', buttonCustomElement);
+  customElements.define('custom-b-btn', buttonCustomElement);
   const cardCustomElement = createCustomElement(CustomCardComponent, {
     injector: app.injector,
   });
-  customElements.define('custom-a-card', cardCustomElement);
+  customElements.define('custom-b-card', cardCustomElement);
 })();
 
 
