@@ -1,10 +1,11 @@
 {
-  "name": "angular-custom-elements",
+  "name": "desing-system-components-a",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --output-hashing=none --configuration production && npm run package",
+    "package": "rm -rf ./build/component-lib.js && cat dist/runtime.js dist/polyfills.js dist/main.js >> ./build/component-lib.js",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -14,6 +15,7 @@
     "@angular/common": "^15.2.0",
     "@angular/compiler": "^15.2.0",
     "@angular/core": "^15.2.0",
+    "@angular/elements": "^15.2.9",
     "@angular/forms": "^15.2.0",
     "@angular/platform-browser": "^15.2.0",
     "@angular/platform-browser-dynamic": "^15.2.0",
