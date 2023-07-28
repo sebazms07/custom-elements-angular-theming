@@ -5,7 +5,7 @@ import { BaseComponent } from '../../core/base/base.component';
 import { componentType } from 'src/app/core/utils/componentType';
 
 @Component({
-  selector: 'app-custom-card',
+  selector: 'native-card',
   templateUrl: './custom-card.component.html',
   styleUrls: ['./custom-card.component.scss'],
   imports: [CommonModule, CustomButtonComponent],

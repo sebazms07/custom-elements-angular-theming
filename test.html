@@ -8,15 +8,24 @@
     <script>
         sessionStorage.setItem("current-theme", "theme-dark");
     </script>
-    <script src="build/component-lib.js"></script>
+    <!-- <script src="build/component-lib.js"></script> -->
+    <script src="build/component-lib2.js"></script>
 </head>
 
-<body>
+<body style="background-color: darkgray;">
     <div style="display: flex; justify-content:space-evenly ;">
 
-        <custom-b-card tabindex="0"></custom-b-card>
-        <custom-a-card tabindex="0"></custom-a-card>
+        <native-card tabindex="0"></native-card>
+
     </div>
+    <br>
+    <div style="display: flex; justify-content:space-evenly ;">
+
+        <native-btn tabindex="0"></native-btn>
+        <native-btn tabindex="0"></native-btn>
+
+    </div>
+
     <br>
     <custom-a-btn></custom-a-btn>
 </body>

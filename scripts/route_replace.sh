@@ -9,20 +9,20 @@ changeThemeVariable(){
     find ./theme_variable.config -type f -name '*.config' -exec sed -i '' s/$currentTheme/$1/g {} +
     find ../package.json -type f -name '*.json' -exec sed -i '' s/$currentThemeComponentLibrary/$3/g {} +
     find ./theme_variable.config -type f -name '*.config' -exec sed -i '' s/$currentThemeComponentLibrary/$3/g {} +
-    find ../src/main.ts -type f -name '*.ts' -exec sed -i '' s/$currentThemeSelector/$2/g {} +
-    find ./theme_variable.config -type f -name '*.config' -exec sed -i '' s/$currentThemeSelector/$2/g {} +
+    # find ../src/main.ts -type f -name '*.ts' -exec sed -i '' s/$currentThemeSelector/$2/g {} +
+    # find ./theme_variable.config -type f -name '*.config' -exec sed -i '' s/$currentThemeSelector/$2/g {} +
     find ../src/main.ts -type f -name '*.ts' -exec sed -i '' s/$currentComponentLibrary/$4/g {} +
     find ./theme_variable.config -type f -name '*.config' -exec sed -i '' s/$currentComponentLibrary/$4/g {} +
 }
 case $1 in 
     --design-system-a | -a)
         echo "cambiando a design system A"
-        changeThemeVariable "design-system-a" "custom-a" "desing-system-components-a" "DesignSystemComponentsA"
+        changeThemeVariable "design-system-a" "custom-a-" "desing-system-components-a" "DesignSystemComponentsA"
 
     ;;
     --design-system-b | -b)
         echo "cambiando a design system B"
-        changeThemeVariable "design-system-b" "custom-b" "desing-system-components-b" "DesignSystemComponentsB"
+        changeThemeVariable "design-system-b" "custom-b-" "desing-system-components-b" "DesignSystemComponentsB"
     ;;
     *)
         echo "\n Debes agregar alguna bandera referenciando a un tema de la marca \n

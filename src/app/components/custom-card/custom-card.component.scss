@@ -1,5 +1,8 @@
 @use "design-system-b/foundation/card" as *;
 
+*:focus-visible {
+  outline: blue solid 2px;
+}
 .card {
     overflow: hidden;
     position: relative;
@@ -99,4 +102,5 @@
     --card-border-radius: var( --custom-card-border-radius);
     --card-text-color: var( --custom-card-text-color);
     --card-status-icon-color: var(--custom-card-icon-status-color);
+
   }

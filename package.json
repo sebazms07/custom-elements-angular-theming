@@ -5,7 +5,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --output-hashing=none --configuration production && npm run package",
+    "build2": "ng build --output-hashing=none --configuration production && npm run package2",
     "package": "rm -rf ./build/component-lib.js && cat dist/runtime.js dist/polyfills.js dist/main.js >> ./build/component-lib.js",
+    "package2": "rm -rf ./build/component-lib2.js && cat dist/runtime.js dist/polyfills.js dist/main.js >> ./build/component-lib2.js",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

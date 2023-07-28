@@ -7,7 +7,7 @@ import {
 import { BaseComponent } from '../../core/base/base.component';
 
 @Component({
-  selector: 'app-custom-button',
+  selector: 'native-button',
   templateUrl: './custom-button.component.html',
   styleUrls: ['./custom-button.component.scss'],
   encapsulation: ViewEncapsulation.ShadowDom,
